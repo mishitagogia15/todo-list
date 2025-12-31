@@ -1,9 +1,10 @@
 body{
     margin: 0;
-    display: flex;
+    display: flex; /*1-d layout model to
+provide a way to arrange, align and distribute space among items*/    
     justify-content: center;
     background-color: rgb(5, 20, 73);
-    color:white
+    color: white
 }
 
 .form{
