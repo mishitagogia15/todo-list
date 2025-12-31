@@ -1,7 +1,6 @@
 body{
     margin: 0;
-    display: flex; /*1-d layout model to
-provide a way to arrange, align and distribute space among items*/    
+    display: flex; /*we used flexbox to center the main content on the page.*/    
     justify-content: center;
     background-color: rgb(5, 20, 73);
     color: white
@@ -19,7 +18,7 @@ provide a way to arrange, align and distribute space among items*/
 
 .input{
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; /*box-sizing helps maintain proper width even after adding padding.*/
     padding: 20px;
     border-radius: 10px 10px 0 0;
     border: none;
@@ -36,13 +35,13 @@ provide a way to arrange, align and distribute space among items*/
     margin: 0;
 }
 
-.list li{
+.list li{ /*targets each task item.*/
     list-style-type: none;
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     border-top: dotted;
     border-color: darkgray;
-    position: relative;
+    position: relative; /*we used relative positioning so icons can be placed correctly inside each task item.*/
 }
 
 .list li .fa-trash{
@@ -53,21 +52,21 @@ provide a way to arrange, align and distribute space among items*/
     transform: translateY(-50%);
     cursor: pointer;
 }
-.list li .fa-check-square{
+.list li .fa-check-square{ 
     color: green;
     position: absolute;
-    right: 40px;
+    right: 40px; /*places it slightly left of delete icon.*/
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
 }
 
-.list li.checked {
+.list li.checked { /*applies when JavaScript adds the checked class.*/
     color: darkgray;
-    text-decoration: line-through;
+    text-decoration: line-through; /*when a task is completed, we add a class that applies line-through styling.*/
 }
 
 .list li.checked .fa-check-square{
-    color: darkgray;
+    color: darkgray; /*makes check icon gray after completion*/
 }
 
